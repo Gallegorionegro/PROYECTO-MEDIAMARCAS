@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa;
+    height: 75px;
+    padding: 25px;
+}
+
+nav {
+    text-decoration: none;
+    align-content: center;
+}
+
+nav a {
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main{
+    background-color: black;
+    align-content: center;
+    color: white;
+    text-align: center;
+}
+
+main h1{
+    margin: 50px 0 0 0;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 50px 50px 100px 50px;
+}
+
+#wallpaper {
+    width: 100%;
+    display: block;
+}
+
+.categoria{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 25px;
+    font-weight: 1000;
+}
+
+.categoria:hover{
+    transform: scale(1.01);
+    transition: all.5s;
+}
+
+.categoria img{
+    height: 200px;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 1px;
+    background-color: #f5f5f7;
+}
+
+#footeroppo {
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#footeroppo::first-letter {
+    color: green;
+}
+
+#footerxiaomi {
+    background-color: #f7efe2;
+}
+
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    header img {
+        max-width: 100%;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    nav a{
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    section{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .categoria {
+        padding: 10px;
+    }
+
+    .categoria h2 {
+        font-size: 12px;
+    }
+
+    .categoria img{
+        height: 125px;
+    }
+
+    main h1{
+        margin: 30px 0 0 0;
+    }
+
+    #footerindex{
+        margin-top: 100px;
+    }
+}
